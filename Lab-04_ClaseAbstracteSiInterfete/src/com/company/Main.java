@@ -72,6 +72,7 @@ public class Main {
 
         testTaskRunner(redoTaskRunner);
         System.out.println("Reexecuting: ");
+        
         redoTaskRunner.redo();
 
         testTaskRunner(new DelayTaskRunner(Strategy.LIFO, 1000));
