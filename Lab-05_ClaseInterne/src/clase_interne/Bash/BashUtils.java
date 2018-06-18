@@ -58,7 +58,8 @@ class BashUtils {
             File[] listOfFiles = folder.listFiles();
 
             System.out.println(dirPath);
-
+    
+            assert listOfFiles != null;
             for (File file : listOfFiles) {
                 System.out.println(file.getName());
             }
